@@ -1,9 +1,7 @@
 ﻿namespace NewsPostApp.Entities
 {
-    
-    public class Comment
+    public class Comment : BaseEntity
     {
-        public Guid CommentId { get; set; }
         public string? Content { get; set; }
         public Guid PostId { get; set; }
         public Post Post { get; set; }
