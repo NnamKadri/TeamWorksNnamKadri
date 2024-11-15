@@ -7,6 +7,7 @@ on:
   pull_request:
     branches:
       - master
+  workflow_dispatch:
 
 jobs:
   build:
@@ -18,8 +19,7 @@ jobs:
       - name: Set up .NET
         uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0'
-          environment: DOTNET_CORE_VERSION
+          dotnet-version: '8.0.x'
 
       - name: Restore dependencies
         run: dotnet restore
