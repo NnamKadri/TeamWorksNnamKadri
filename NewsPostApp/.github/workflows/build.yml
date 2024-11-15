@@ -1,5 +1,5 @@
-﻿#try work oPlease o again
-name: Build Project
+﻿name: Build Project
+
 on:
   push:
     branches:
@@ -7,19 +7,25 @@ on:
   pull_request:
     branches:
       - master
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4  
+        uses: actions/checkout@v4
+
       - name: Set up .NET
-        uses: actions/setup-dotnet@v4  
+        uses: actions/setup-dotnet@v4
         with:
-          dotnet-version: '8.0.x'  
+          dotnet-version: '8.0'
+          environment: DOTNET_CORE_VERSION
+
       - name: Restore dependencies
         run: dotnet restore
+
       - name: Build project
-        run: dotnet build --no-restore --configuration Release
+        run: dotnet build --configuration Release
+
       - name: Run tests
-        run: dotnet test --no-build --verbosity normal
+        run: dotnet test --verbosity normal
