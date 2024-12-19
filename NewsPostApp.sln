@@ -5,11 +5,15 @@ VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsPostApp", "NewsPostApp\NewsPostApp.csproj", "{DC14C112-D243-412F-9EE9-CA59168F60D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{AF0308B2-D51D-4DA3-AE6E-E897F391B02A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{AF0308B2-D51D-4DA3-AE6E-E897F391B02A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{0BEB1DBE-8779-4EC9-A9B8-1B87CC03F2E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{0BEB1DBE-8779-4EC9-A9B8-1B87CC03F2E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Applications", "Applications\Applications.csproj", "{82BE7FD8-7937-4BA9-BAF3-2637A52FA314}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Applications", "Applications\Applications.csproj", "{82BE7FD8-7937-4BA9-BAF3-2637A52FA314}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilities", "Utilities\Utilities.csproj", "{4DF42C94-D159-451D-A3B0-3D1646DEF634}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnit", "TestUnit\TestUnit.csproj", "{CC82A237-83D2-4CEB-8DB6-AC36F17F211B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,14 @@ Global
 		{82BE7FD8-7937-4BA9-BAF3-2637A52FA314}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82BE7FD8-7937-4BA9-BAF3-2637A52FA314}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82BE7FD8-7937-4BA9-BAF3-2637A52FA314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DF42C94-D159-451D-A3B0-3D1646DEF634}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF42C94-D159-451D-A3B0-3D1646DEF634}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF42C94-D159-451D-A3B0-3D1646DEF634}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF42C94-D159-451D-A3B0-3D1646DEF634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC82A237-83D2-4CEB-8DB6-AC36F17F211B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC82A237-83D2-4CEB-8DB6-AC36F17F211B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC82A237-83D2-4CEB-8DB6-AC36F17F211B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC82A237-83D2-4CEB-8DB6-AC36F17F211B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
