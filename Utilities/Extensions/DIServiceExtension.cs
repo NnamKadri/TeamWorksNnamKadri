@@ -21,6 +21,7 @@ namespace NewsPostApp.Extensions
 			services.AddSingleton<ICloudinaryWrapper, CloudinaryWrapper>();
 			services.AddScoped<ICloudinaryService, CloudinaryService>();
 			services.AddSerilogLogging(configuration);
+			services.AddSwaggerDocumentation();
 
 
 			return services;
