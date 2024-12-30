@@ -57,9 +57,9 @@ namespace TestUnit
 			Assert.NotNull(cloudinary);
 
 			//Assert.NotNull(account);
-			Assert.Equal("dtlguq304", cloudinary.Api.Account.Cloud);
-			Assert.Equal("668451417956457", cloudinary.Api.Account.ApiKey);
-			Assert.Equal("KtF8krKjSP5ptuwFQbvlibg8DJ4", cloudinary.Api.Account.ApiSecret);
+			Assert.Equal("", cloudinary.Api.Account.Cloud);
+			Assert.Equal("", cloudinary.Api.Account.ApiKey);
+			Assert.Equal("", cloudinary.Api.Account.ApiSecret);
 		}
 
 
