@@ -24,7 +24,6 @@ namespace NewsPostApp.Extensions
 			services.AddScoped<ICloudinaryService, CloudinaryService>();
 			services.AddSerilogLogging(configuration);
 			services.AddSwaggerDocumentation();
-			
 			//adding Cors
 			services.AddCors(options => options.AddPolicy("AllowAll", c => c.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod()));
 
