@@ -5,6 +5,7 @@ using Infrastructure.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NewsPostApp.Extensions.Utilities.Extensions;
+using Utilities.Extensions;
 
 
 namespace NewsPostApp.Extensions
@@ -17,12 +18,15 @@ namespace NewsPostApp.Extensions
 			services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 			// Add services
+			services.ConfigureAuthentication(configuration);
 			services.AddCloudinaryService(configuration);
 			services.AddSingleton<ICloudinaryWrapper, CloudinaryWrapper>();
 			services.AddScoped<ICloudinaryService, CloudinaryService>();
 			services.AddSerilogLogging(configuration);
 			services.AddSwaggerDocumentation();
-
+			services.AddScoped<IAuthService, AuthService>();
+			//adding Cors
+			services.AddCors(options => options.AddPolicy("AllowAll", c => c.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod()));
 
 			return services;
 		}

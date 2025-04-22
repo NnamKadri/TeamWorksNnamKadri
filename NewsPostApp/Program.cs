@@ -34,9 +34,8 @@ namespace NewsPostApp
             }
 
             app.UseHttpsRedirection();
-
-            app.UseAuthorization();
-
+			app.UseCors("AllowAll");
+			app.UseAuthorization();
             app.MapControllers();
 
             app.Run();
