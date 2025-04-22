@@ -10,13 +10,11 @@ namespace Infrastructure.Interfaces
 {
 
 	public interface ICloudinaryService
-		{
+	{
 			Task<ImageUploadResult> UploadImage(IFormFile file);
 
 			Task<DeletionResult> DeleteImageOrVideo(string publicId);
 
 			Task<VideoUploadResult> UploadVideo(IFormFile file);
-
-
-		}
+	}
 }
